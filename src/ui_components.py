@@ -55,7 +55,7 @@ def render_sidebar():
         if api_provider == "OpenAI-Compatible (vLLM)":
             api_key = OPENAI_API_KEY if OPENAI_API_KEY else "EMPTY"
             # api_url = st.text_input("Base URL", value=VLLM_API_URL)
-            api_url = "http://175.115.52.16:8989/v1"
+            api_url = "http://175.115.52.16:8003/v1"
             model_name = st.text_input("Model Name", value=VLLM_MODEL_NAME)
         elif api_provider == "OpenAI":
             api_key = st.text_input(
